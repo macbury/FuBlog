@@ -1,0 +1,605 @@
+%h3 
+  %a.toggle{ href: "#" } Hide List Content
+  %span.count 10
+  Drafts
+%ul.list
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" }= new Date()
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+%h3 Kwiecień 2012
+%ul.list
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" }= new Date()
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins
+
+  %li
+    .day 12
+    .main
+      %a.title{ href: "#", title: "Click to view" } Programowanie w c++
+    %ul.actions
+      %li.edit
+        %a{ title: "Edit" }
+          %ins
+      %li.delete
+        %a{ title: "Edit" }
+          %ins
+      %li.comments
+        %a{ title: "Edit" }
+          %ins

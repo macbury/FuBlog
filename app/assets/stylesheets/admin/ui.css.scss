@@ -1,0 +1,345 @@
+@import "bourbon";
+
+$overlayz: 2000;
+
+.fu-overlay {
+  position: fixed;
+  z-index: $overlayz;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0,0,0,0.2);
+  display: none;
+  opacity: 0;
+  @include transition(all, 0.5s, $ease-in-circ);
+  &.on {
+    opacity: 1.0;
+    display: block;
+  }
+}
+
+.fu-droparea {
+  background: #fff;
+  border: 2px dashed #ddd;
+  @include border-radius(5px);
+  padding: 20px 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #ddd;
+  margin: 5px 0px;
+}
+
+$part_width: 70px;
+$part_padding: 5px;
+.fu-part {
+  position: relative;
+  z-index: $overlayz + 1;
+  &:hover, &:hover .fu-tools {
+    background: #fff;
+    z-index: $overlayz + 1;
+  }
+  .fu-tools {
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    @include border-radius(4px 0px 0px 4px);
+    margin-left: -$part_width;
+    z-index: $overlayz + 1;
+
+    width: $part_width - $part_padding * 2;
+    position: absolute;
+
+    .move {
+      text-indent: -9999px;
+      width: 16px;
+      height: 16px;
+      cursor: move;
+      background: transparent image-url("admin/drag_handle.gif") no-repeat center center;
+      display: inline-block
+    }
+    .trash {
+      text-indent: -9999px;
+      width: 16px;
+      height: 16px;
+      background: transparent image-url("admin/trash.gif") no-repeat center center;
+      display: inline-block
+    }
+  }
+}
+
+.fu-editable {
+  position: relative;
+  z-index: $overlayz + 1;
+  &:hover {
+    background: #FFC;
+    cursor: text;
+  }
+}
+
+$panelz: $overlayz + 100;
+
+.fu {
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  .pull-right {
+    float: right;
+  }
+
+  .fu-activity {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: transparent image-url("admin/ajax.gif") no-repeat center;
+    margin-right: 5px;
+    display: none;
+  }
+
+  .fu-close {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: transparent image-url("admin/close.png") no-repeat center;
+    margin-right: 5px;
+    text-indent: -9999px;
+    display: none;
+  }
+
+  .fu-menu {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: $panelz;
+    
+    .fu-panel {
+      display: none;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.93);
+      width: 1125px;
+      
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      @include box-shadow(0 0 10px rgba(0,0,0,0.3), 0 1px 1px #2d2d2d inset);
+      @include transition(all, 0.5s, $ease-in-circ);
+      border-top: 1px solid #000000;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+      .fu-post-form {
+        padding: 10px;
+        margin: 0px;
+        input[type="text"] {
+          width: 100%;
+          padding: 10px;
+          background: black;
+          border: 2px solid orange;
+          border-radius: 4px;
+          color: white;
+          box-sizing: border-box;
+          &:-moz-placeholder, &:-webkit-input-placeholder {
+            color: #222;
+          }
+        }
+      }
+
+      .fu-subbar {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        background: #222;
+        height: 24px;
+        @include box-shadow(0 0 10px rgba(0,0,0,0.3), 0 1px 1px #2d2d2d inset);
+        li {
+          float: left;
+          margin-left: 5px;
+          a {
+            line-height: 24px;
+            display: block;
+            padding: 0 8px;
+            color: #fff;
+            font-size: 10px;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            &:hover {
+              background: rgba(0,0,0,0.6);
+            }
+          }
+        }
+      }
+
+      .list {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li {
+          margin: 0px;
+          padding: 0px;
+          a {
+            display: block;
+            padding: 5px 10px;
+            color: white;
+          }
+        }
+        li:nth-child(even) a {
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      .fu-posts {
+        height: 320px;
+      }
+
+      .items {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        width: auto;
+        height: 55px;
+        width: 2000px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+        height: 4px;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: orange;
+      }
+
+      .items li {
+        background: #2d2d2d;
+        @include border-radius(4px);
+        @include box-shadow(0px 0px 2px #000, 1px 1px 1px #363636 inset);
+        $padding: 3px;
+        padding: $padding;
+        width: 141px;
+        height: 45px - $padding;
+        float: left;
+        display: inline-block;
+
+        margin: 5px 4px;
+        cursor: move;
+
+        &:hover {
+          background: #3d3d3d;
+        }
+
+        .icon {
+          background: transparent image-url("admin/object.png") no-repeat center center;
+          width: 42px;
+          height: 42px;
+          float: left;
+        }
+
+        .title {
+          text-align: left;
+          padding-top: 7px;
+          margin: 0 0 0 50px;
+          display: block;
+          width: 82px;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: bold;
+          color: white;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .description {
+          text-align: left;
+          margin: 0 0 0 50px;
+          display: block;
+          width: 82px;
+          font-size: 10px;
+          color: #666;
+          line-height: 13px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .fu-toolbar {
+      .fu-logo {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 10px 0px 20px;
+        float: left;
+        line-height: 32px;
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+      }
+
+      overflow: hidden;
+      margin: 0 auto;
+      background: #000;
+      width: 1125px;
+      height: 32px;
+      background-color: white;
+      @include linear-gradient(top, #222222, #101010);
+      @include border-radius(4px 4px 0px 0px);
+      @include box-shadow(0 0 10px rgba(0,0,0,0.3), 0 1px 1px #2d2d2d inset);
+      border: 1px solid #000000;
+      border-bottom: 0px;
+
+      ul {
+        float: left;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li {
+          float: left;
+          line-height: 32px;
+          margin:0px;
+          padding:0px;
+
+
+          &.active a {
+            border-bottom: 2px solid orange;
+            line-height: 30px;
+            color: white;
+          }
+
+          &.divider {
+            height: 32px;
+            width: 1px;
+            margin: 0 9px;
+            overflow: hidden;
+            background-color: #101010;
+            border-right: 1px solid #222222;
+          }
+
+          a {
+            display: block;
+            padding: 0px 10px;
+            line-height: 32px;
+            color: #999;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clear {
+    clear: both;
+  }
+
+}

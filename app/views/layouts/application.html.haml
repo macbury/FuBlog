@@ -1,0 +1,49 @@
+!!! 5
+%head
+  %meta{ charset: "utf-8" }
+  %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
+  %title= content_for?(:title) ? yield(:title) : "Untitled"
+  = stylesheet_link_tag "blog"
+  = javascript_include_tag "blog"
+
+  = csrf_meta_tag
+
+%body{ class: [[controller.controller_name,controller.action_name].join("-"), "all-pages"].join(" ") }
+  .blog
+    .topbar
+      .container
+        .row.bar-content
+          .twelve.columns
+            #social
+              = link_to "Rss", '#', class: "rss"
+              = link_to "Twitter", '#', class: "twitter"
+              = link_to "Facebook", '#', class: "fb"
+            %ul.menu
+              - if logged_in?
+                %li= link_to "Logout", logout_path
+              - else
+                %li= link_to "Login", "/auth/github"
+    .container
+      .row
+        .twelve.columns
+          .foundation-header
+            = form_tag root_path, class: "search-form" do
+              = text_field_tag "query", params[:query], placeholder: "Search..."
+            %h1
+              = link_to "FuBlog", root_path
+            %h4.subheader is where we discuss product design, business and strategy.
+      .row
+        .twelve.columns= yield
+      %footer.row
+        .twelve.columns
+          %section
+            .five.columns
+              %h6 
+                %strong Made by MacBury
+              %p Foundation is made by ZURB, an interaction design and strategy company located in Campbell, California. We've put over 10 years of experience building web products, services and websites into this framework. Foundation Info and Goodies →
+            .seven.columns
+              %h6 
+                %strong Made by MacBury
+              %p Foundation is made by ZURB, an interaction design and strategy company located in Campbell, California. We've put over 10 years of experience building web products, services and websites into this framework. Foundation Info and Goodies →
+
+  = #render partial: "layouts/social"

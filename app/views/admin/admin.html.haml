@@ -1,0 +1,24 @@
+!!! 5
+%head
+  %meta{ charset: "utf-8" }
+  %title= content_for?(:title) ? yield(:title) : "Untitled"
+  = stylesheet_link_tag "admin"
+  = javascript_include_tag "admin"
+  
+  = csrf_meta_tag
+
+%body
+  .application
+    .toolbar
+    .sidebar
+      %h3 Focus
+
+      %ul.primary-boxes#boxes
+      %h3 Explore
+      .action-bar
+        .action.add
+          %a
+            %ins +
+    .editor
+      .info= t("admin.info")
+    

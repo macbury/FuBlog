@@ -1,0 +1,1 @@
+attributes :slug, :title, :publish_at, :id, :editing, :created_at

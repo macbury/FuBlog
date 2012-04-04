@@ -1,0 +1,12 @@
+= form_for @entry do |f|
+  %article
+    %header
+      %h2= f.text_field :title, placeholder: "Title"
+      %small 
+        arek
+    %section
+      %p aaaa
+
+    
+  .actions
+    = f.submit 'Save'
